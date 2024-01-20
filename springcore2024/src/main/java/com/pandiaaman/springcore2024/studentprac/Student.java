@@ -19,14 +19,14 @@ public class Student {
 	
 	private Properties studentProps;
 	
-	private String studentAddress;
+	private StudentAddress studentAddress;
 	
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Student(int studentId, String studentName, String studentAddress) {
+	public Student(int studentId, String studentName, StudentAddress studentAddress) {
 		super();
 		this.studentId = studentId;
 		this.studentName = studentName;
@@ -34,7 +34,7 @@ public class Student {
 	}
 	
 	public Student(int studentId, String studentName, List<String> studentMarks, Set<String> studentPhones,
-			Map<String, String> studentOlderSchools, String studentAddress, Properties props) {
+			Map<String, String> studentOlderSchools, StudentAddress studentAddress, Properties props) {
 		super();
 		this.studentId = studentId;
 		this.studentName = studentName;
@@ -62,11 +62,11 @@ public class Student {
 		this.studentName = studentName;
 	}
 
-	public String getStudentAddress() {
+	public StudentAddress getStudentAddress() {
 		return studentAddress;
 	}
 
-	public void setStudentAddress(String studentAddress) {
+	public void setStudentAddress(StudentAddress studentAddress) {
 		this.studentAddress = studentAddress;
 	}
 	
