@@ -20,10 +20,11 @@ public class App
         Student studentAnisha = context.getBean("studentAnisha", Student.class);
         Student studentAman = context.getBean("studentAman", Student.class);
         Student studentAyaz = context.getBean("studentAyaz", Student.class);
+        Student studentSanchit = context.getBean("studentSanchit", Student.class);
         
         System.out.println(studentAnisha);
         System.out.println(studentAman);
         System.out.println(studentAyaz);
-        
+        System.out.println(studentSanchit);
     }
 }
