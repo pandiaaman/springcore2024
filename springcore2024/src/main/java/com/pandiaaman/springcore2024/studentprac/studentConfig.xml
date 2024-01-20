@@ -8,7 +8,14 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/beans/spring-context.xsd">
-        
+      
+	<bean class="com.pandiaaman.springcore2024.studentprac.StudentAddress" name="anishaAddress">
+		<property name="houseNumber" value="707"/>
+		<property name="street" value="sun tower"/>
+		<property name="city" value="udaipur" />
+		<property name="zipcode" value="303111" />
+	</bean>
+	  
 	<bean class="com.pandiaaman.springcore2024.studentprac.Student" name="studentAnisha">
 		<property name="studentId">
 			<value>1</value>
@@ -49,16 +56,27 @@
 			</props>
 		</property>
 		
-		<property name="studentAddress" value="707, Sun Tower, Udaipur" />
+		<property name="studentAddress">
+			<ref bean="anishaAddress"/>
+		</property>
+	</bean>
+	
+	<bean class="com.pandiaaman.springcore2024.studentprac.StudentAddress" name="amanAddress">
+		<property name="houseNumber" value="G 14"/>
+		<property name="street" value="elegance garnet"/>
+		<property name="city" value="bengaluru" />
+		<property name="zipcode" value="560103" />
 	</bean>
 	
 	<bean class="com.pandiaaman.springcore2024.studentprac.Student" name="studentAman">
 		<property name="studentId" value="2"/>
 		<property name="studentName" value="Aman" />
-		<property name="studentAddress" value="G14, Elegance Garnet, Benagaluru" />
+		<property name="studentAddress" ref="amanAddress" />
 	</bean>
 	
-	<bean class="com.pandiaaman.springcore2024.studentprac.Student" name="studentAyaz" p:studentId="3" p:studentName="Ayaz" p:studentAddress="Delhi" />
+	<bean class="com.pandiaaman.springcore2024.studentprac.StudentAddress" name="ayazAddress" p:houseNumber="7" p:street="MG road" p:city="delhi" p:zipcode="110111" />
+	
+	<bean class="com.pandiaaman.springcore2024.studentprac.Student" name="studentAyaz" p:studentId="3" p:studentName="Ayaz" p:studentAddress-ref="ayazAddress" />
 	
 	
 </beans>        
