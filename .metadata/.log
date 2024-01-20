@@ -402,3 +402,45 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-20 08:40:57.849
 !MESSAGE Classpath changed for project: springcore2024
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-20 08:48:07.964
+!MESSAGE Classpath changed for project: springcore2024
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-20 08:48:08.800
+!MESSAGE Classpath changed for project: springcore2024
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-20 08:48:08.806
+!MESSAGE Boot project ADDED: springcore2024
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-20 08:48:09.933
+!MESSAGE Classpath changed for project: springcore2024
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-20 08:49:17.120
+!MESSAGE Classpath changed for project: springcore2024
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-20 08:56:10.781
+!MESSAGE Classpath changed for project: springcore2024
+
+!ENTRY org.eclipse.jface 2 0 2024-01-20 08:56:19.764
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-01-20 08:56:19.764
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-01-20 09:07:00.571
+!MESSAGE Classpath changed for project: springcore2024

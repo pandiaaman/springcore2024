@@ -13,9 +13,42 @@
 		<property name="studentId">
 			<value>1</value>
 		</property>
+		
 		<property name="studentName">
 			<value>Anisha</value>
 		</property>
+		
+		<property name="studentMarks">
+			<list>
+				<value>15</value>
+				<value>18</value>
+				<value>16</value>
+				<value>19</value>
+				<value>20</value>
+			</list>
+		</property>
+		
+		<property name="studentPhones">
+			<set>
+				<value>6377077598</value>
+				<value>9183848839</value>
+			</set>
+		</property>
+		
+		<property name="studentOlderSchools">
+			<map>
+				<entry key="2012-2016" value="RJS" />
+				<entry key="2016-2019" value="KV" />
+			</map>
+		</property>
+		
+		<property name="studentProps">
+			<props>
+				<prop key="age">25</prop>
+				<prop key="gender">Female</prop>
+			</props>
+		</property>
+		
 		<property name="studentAddress" value="707, Sun Tower, Udaipur" />
 	</bean>
 	
