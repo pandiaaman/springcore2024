@@ -4,6 +4,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context
@@ -75,8 +76,18 @@
 	</bean>
 	
 	<bean class="com.pandiaaman.springcore2024.studentprac.StudentAddress" name="ayazAddress" p:houseNumber="7" p:street="MG road" p:city="delhi" p:zipcode="110111" />
-	
 	<bean class="com.pandiaaman.springcore2024.studentprac.Student" name="studentAyaz" p:studentId="3" p:studentName="Ayaz" p:studentAddress-ref="ayazAddress" />
+	
+	<bean class="com.pandiaaman.springcore2024.studentprac.StudentAddress" name="sanchitAddress" p:houseNumber="G14" p:street="Elegance garnet" p:city="bangaluru" p:zipcode="560103" />
+	<bean class="com.pandiaaman.springcore2024.studentprac.Student" name="studentSanchit">
+		<constructor-arg>
+			<value>4</value>
+		</constructor-arg>
+		
+		<constructor-arg value="Sanchit"/>
+		
+		<constructor-arg ref="sanchitAddress" />
+	</bean>
 	
 	
 </beans>        
