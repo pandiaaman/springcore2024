@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/util
+	http://www.springframework.org/schema/util/spring-util.xsd">
+	
+	<!-- stand alone collections -->
+	
+	<util:list list-class="java.util.LinkedList" id="bestFriendsList">
+		<value>Aman</value>
+		<value>Sumit</value>
+		<value>Ayaz</value>
+		<value>Richa</value>
+	</util:list>
+	
+	<bean class="com.pandiaaman.springcore2024.standalonecollections.Person" name="person1" p:personId="1">
+		<property name="personName" value="Aman" />
+		<property name="personFriends">
+			<ref bean="bestFriendsList"/>
+		</property>
+	</bean>
+	
+	<bean class="com.pandiaaman.springcore2024.standalonecollections.Person" name="person2" p:personId="2">
+		<property name="personName" value="Anisha" />
+		<property name="personFriends" ref="bestFriendsList"/>
+	</bean>
+	
+</beans>	
